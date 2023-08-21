@@ -64,53 +64,84 @@
 
 
 
-# 1's count in binary
+# python code for 1's count in binary
 
-#include <stdio.h>
-def binarycount(number):
-    count =0
-    while number>0:
-        if number%2==1:
-            count= count+1
-        number = number//2
-    return count
+# def binarycount(number):
+#     count =0
+#     while number>0:
+#         if number%2==1:
+#             count= count+1
+#         number = number//2
+#     return count
 
-number= int(input("enter the number: "))
-if number<0:
-    print("enter a non negative number")
-else:
-    result= binarycount(number)
-    print("the number 1's binary counts are ", result)
+# number= int(input("enter the number: "))
+# if number<0:
+#     print("enter a non negative number")
+# else:
+#     result= binarycount(number)
+#     print("the number 1's binary counts are ", result)
+
+# for i in number:
+#     a[i]= number%2
+#     number= number/2
 
 
 
+# python code to find the index of an array
 
-# int countOnesInBinary(int num) {
-#     int count = 0;
-#     while (num > 0) {
-#         if (num % 2 == 1) {
-#             count++;
-#         }
-#         num /= 2; // Divide by 2 to move to the next binary digit
-#     }
-#     return count;
-# }
+# def index(arr, size, value):
+#     for i in range(size):
+#         if arr[i] == value:
+#             return i
+#     return -1
 
-# int main() {
-#     int num;
 
-#     printf("Enter an integer: ");
-#     scanf("%d", &num);
+# array = []
+# size = int(input("Enter the size of the array: "))
+    
+# for i in range(size):
+#     element = int(input(f"Enter element {i+1}: "))
+#     array.append(element)
+    
+# print("Your entered array is:", end=" ")
+# for element in array:
+#     print(element, end=" ")
 
-#     if (num < 0) {
-#         printf("Please enter a non-negative integer.\n");
-#     } else {
-#         int onesCount = countOnesInBinary(num);
-#         printf("Number of 1's in binary representation of %d is: %d\n", num, onesCount);
-#     }
+# size = len(array)
 
-#     return 0;
-# }
+# value = int(input("\nEnter the value to search: "))
+    
+# index_found = index(array, size, value)
+
+# if index_found == -1:
+#     print("Element not found.")
+# else:
+#     print(f"Element found at index: {index_found}")
+
+
+
+#  python code to expand the string
+
+# string = input("Enter the string: ")
+# print(f"Your entered string is {string}")
+
+# if string[0] == '-':
+#     for ch in range(ord(string[1]), ord(string[3]) + 1):
+#         print(chr(ch), end="")
+# else:
+#     length = len(string)
+#     print(f"The length of the string is {length}")
+    
+#     if length > 5:
+#         for ch in range(ord(string[0]), ord(string[2]) + 1):
+#             print(chr(ch), end="")
+        
+#         for i in range(ord(string[3]), ord(string[5]) + 1):
+#             print(chr(i), end="")
+#     else:
+#         for ch in range(ord(string[0]), ord(string[2]) + 1):
+#             print(chr(ch), end="")
+
 
 
 
